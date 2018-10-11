@@ -10,6 +10,10 @@
         color: #111;
     }
 
+    h2 {
+        font-size: 1rem;
+    }
+
     legend {
         padding: .33rem .66rem;
         font-style: italic;
@@ -21,7 +25,7 @@
     }
 
     #results {
-        margin-top: 1rem;
+        margin: 1rem 0 5rem;
     }
 
     button {
@@ -60,3 +64,13 @@
     <button onclick="test()">Parse</button>
     Elapsed time: <span id="elapsed">???</span> ms
 </div>
+
+
+<h2>Timer Precision</h2>
+<p>
+    Browsers
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/now#Reduced_time_precision">reduce the precision</a>
+    of <code>performance.now()</code> for privacy and security reasons.
+    For best results, please temporarily disable this feature.
+    In Firefox, set the <code>privacy.reduceTimerPrecision</code> pref to <code>false</code>.
+</p>
